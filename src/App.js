@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/home/Home";
+import Login from "./Pages/login/Login";
 import Map from "./Pages/map/Map";
 
 import NavBar from "./components/NavBar";
@@ -13,6 +14,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/map" element={<Map />} />
         </Routes>
       </Router>

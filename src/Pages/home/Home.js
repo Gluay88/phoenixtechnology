@@ -4,16 +4,15 @@ import PhoenixLogo from "../../assets/phoenix-logo.svg";
 import "./HomeStyle.css";
 
 const Home = () => {
-  // const getData = (data) => {
-  //   console.log("data from Home.js", data);
-  // };
+  const yearCurrent = new Date().getFullYear();
   return (
     <div className="home-container">
-      <p>Welcome to</p>
-      <h4>Phoenix Technology</h4>
       <img src={PhoenixLogo} alt="Phoenix Logo" />
-
-      {/* <Form onSubmit={getData} /> */}
+      <h4>
+        <span>Phoenix</span> Technology Inc.
+      </h4>
+      <br />
+      <p>Copyright &copy; {yearCurrent} - Gluay S. Wang</p>
     </div>
   );
 };

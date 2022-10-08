@@ -1,4 +1,30 @@
+.home-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3rem;
+}
+
 .home-container img {
   width: 30%;
   height: auto;
+  margin-bottom: 2rem;
+}
+.home-container h4 {
+  color: #183153;
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+.home-container span {
+  color: #74c0fc;
+}
+.home-container p {
+  color: #183153;
+  font-size: 1.25rem;
+  display: block;
+  border-top: solid #183153 0.005rem;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 1rem;
 }
