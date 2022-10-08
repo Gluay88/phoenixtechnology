@@ -1,11 +1,10 @@
 .login-container {
   width: 100vw;
-  height: auto;
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
   color: #f0f1f3;
 }
 
