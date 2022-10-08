@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import Map from "./Pages/Map";
-import Contact from "./Pages/Contact";
+import Home from "./Pages/home/Home";
+import Map from "./Pages/map/Map";
+
 import NavBar from "./components/NavBar";
 import "./App.css";
 
@@ -14,7 +14,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/map" element={<Map />} />
-          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>
