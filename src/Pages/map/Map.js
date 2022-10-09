@@ -1,27 +1,25 @@
 import React, { useState } from "react";
-import ReactMapGL from "react-map-gl";
+import MapBase from "./MapBase";
+import PhoenixConfig from "./PhoenixConfig";
 
-const Map = () => {
+const MapMain = () => {
+  const [show, setShow] = useState("mapbase");
+  const updateView = (view) => {
+    if (view === "mapbase") {
+      setShow("mapbase");
+    } else {
+      setShow("phoenixConfig");
+    }
+  };
   return (
-    <div
-      style={{
-        width: "100vw",
-        height: "100vh",
-      }}
-    >
-      <ReactMapGL
-        initialViewState={{
-          longitude: -71.057083,
-          latitude: 42.361145,
-          zoom: 12,
-        }}
-        mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
-        mapStyle="mapbox://styles/mapbox/satellite-v9"
-      >
-        markers here..
-      </ReactMapGL>
-    </div>
+    <>
+      {show === "mapbase" ? (
+        <MapBase updateView={updateView} />
+      ) : (
+        <PhoenixConfig updateView={updateView} />
+      )}
+    </>
   );
 };
 
-export default Map;
+export default MapMain;

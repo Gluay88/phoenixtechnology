@@ -1,0 +1,21 @@
+.mapbase-container {
+  width: 100%;
+  height: 100vh;
+}
+.mapbase-container button {
+  color: #f0f1f3;
+  border-radius: 1rem;
+  position: absolute;
+  z-index: 100;
+  right: 1rem;
+  border: none;
+  background-color: #74c0fc;
+  margin-top: -2rem;
+  padding: 0 1rem;
+  color: #183153;
+  font-size: 0.85rem;
+}
+.mapbase-container button:hover {
+  background-color: #63e6be;
+  cursor: pointer;
+}
