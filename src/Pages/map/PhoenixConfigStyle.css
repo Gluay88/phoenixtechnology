@@ -23,3 +23,39 @@
   background-color: #63e6be;
   cursor: pointer;
 }
+.phoenix-config-container input {
+  width: 80%;
+  height: auto;
+}
+.create-site-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border-bottom: solid #183153 0.015rem;
+}
+.create-site-container div {
+  width: 50%;
+  height: auto;
+}
+
+.create-site-container button {
+  background: none;
+  width: 1rem;
+  height: auto;
+  padding: 0;
+  margin-right: 0.45rem;
+}
+.create-site-container button:last-child {
+  background: none;
+  width: 0.85rem;
+  height: auto;
+}
+.site-name-content a {
+  text-decoration: none;
+  color: #183153;
+}
+.site-name-content a:hover {
+  color: #74c0fc;
+}
