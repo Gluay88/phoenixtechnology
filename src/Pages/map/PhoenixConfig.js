@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Site from "./Site";
 import "./PhoenixConfigStyle.css";
 
+const listFromLocalStorage = JSON.parse(
+  localStorage.getItem("site-list") || "[]"
+);
+
 const PhoenixConfig = ({ updateView }) => {
-  const [siteList, setSiteList] = useState([]);
+  const [siteList, setSiteList] = useState(listFromLocalStorage);
   const [newSite, setNewSite] = useState("");
   const handleChange = (e) => {
     setNewSite(e.target.value);
@@ -18,6 +22,10 @@ const PhoenixConfig = ({ updateView }) => {
   const deleteSite = (id) => {
     setSiteList(siteList.filter((site) => site.id !== id));
   };
+
+  useEffect(() => {
+    localStorage.setItem("site-list", JSON.stringify(siteList));
+  }, [siteList]);
 
   return (
     <div className="phoenix-config-container">
@@ -47,6 +55,8 @@ const PhoenixConfig = ({ updateView }) => {
             );
           })}
         </div>
+
+        <div>{localStorage.getItem("site-list")}</div>
       </div>
     </div>
   );
