@@ -7,7 +7,7 @@ const MapBase = ({ updateView }) => {
     <div className="mapbase-container">
       <div>
         <button onClick={() => updateView("phoenixConfig")}>
-          Create a site
+          Site Configuration
         </button>
       </div>
       <ReactMapGL

@@ -13,7 +13,7 @@ const Site = ({ siteName, id, deleteSite }) => {
           <img src={EditIcon} alt="edit-icon" />
         </button>
         <button onClick={() => deleteSite(id)}>
-          <img src={DeleteIcon} alt="delete-icon" />
+          <img src={DeleteIcon} alt="delete-icon" width="14px" />
         </button>
       </div>
     </div>

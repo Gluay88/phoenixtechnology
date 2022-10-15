@@ -1,6 +1,6 @@
 .phoenix-config-container {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   margin: 0 auto;
 }
 .phoenix-config-container h2 {
@@ -11,51 +11,91 @@
 }
 
 .phoenix-config-container button {
-  background-color: #74c0fc;
-  border: none;
-  width: 12rem;
-  padding: 0.45rem 2rem;
+  border: #74c0fc solid 0.2rem;
+  background: none;
+  width: 10rem;
   border-radius: 2rem;
-  color: #183153;
+  color: #74c0fc;
   margin: 1rem 0 1.5rem 0;
 }
+
 .phoenix-config-container button:hover {
+  border: #63e6be solid 0.2rem;
+  color: #63e6be;
+}
+
+.form-create-site button:hover {
   background-color: #63e6be;
   cursor: pointer;
 }
-.phoenix-config-container input {
-  width: 80%;
-  height: auto;
-}
-.create-site-container {
+
+.create-site-container,
+.create-user-container {
   width: 100%;
-  height: auto;
+  height: 3rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
   border-bottom: solid #183153 0.015rem;
 }
-.create-site-container div {
+.create-site-container div,
+.create-user-container div {
   width: 50%;
   height: auto;
 }
-
-.create-site-container button {
+.create-site-container button,
+.create-user-container button {
   background: none;
   width: 1rem;
   height: auto;
   padding: 0;
   margin-right: 0.45rem;
+  border: none;
 }
-.create-site-container button:last-child {
-  background: none;
-  width: 0.85rem;
-  height: auto;
+.create-site-container button:hover,
+.create-user-container button:hover {
+  transform: scale(1.1);
 }
-.site-name-content a {
+
+.site-name-content a,
+.create-user-container a {
   text-decoration: none;
   color: #183153;
 }
-.site-name-content a:hover {
+.site-name-content a:hover,
+.create-user-container a:hover {
   color: #74c0fc;
+}
+.form-create-site,
+.form-create-user {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.form-create-site input {
+  width: 100%;
+  padding-left: 0.5rem;
+}
+
+.form-create-user input {
+  width: 100%;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.form-create-site button,
+.form-create-user button {
+  width: 25%;
+  margin: 0.5rem 0;
+  background-color: #74c0fc;
+  border: none;
+  padding: 0.45rem 2rem;
+  border-radius: 2rem;
+  color: #183153;
+}
+.select-section select {
+  width: 100%;
+  height: 1.85rem;
+  color: #6c757d;
+  padding-left: 0.25rem;
 }

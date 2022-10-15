@@ -31,11 +31,7 @@
   margin-bottom: 1rem;
   padding-left: 0.5rem;
 }
-::placeholder {
-  color: #b9b9b9;
-  padding-left: 0.5rem;
-  font-size: 0.95rem;
-}
+
 .login-hide-show {
   position: absolute;
   margin-left: -2.5rem;
