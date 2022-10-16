@@ -41,3 +41,8 @@
 darkblue #183153
 lightgreen #63e6be
 lightgray #F0F1F3 */
+
+/* mapbase geocoder */
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+  margin: 10px 15px 0 0;
+}
