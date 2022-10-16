@@ -65,7 +65,12 @@ const PhoenixConfig = ({ updateView }) => {
           })}
         </div>
         <br />
+        <br />
+
         <CreateUser />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );

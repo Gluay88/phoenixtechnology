@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import User from "./User";
+import Select from "react-select";
 
 const listFromLocalStorage = JSON.parse(
   localStorage.getItem("user-list") || "[]"
@@ -11,9 +12,6 @@ const CreateUser = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleChange = (e) => {
-    setUserList(e.target.value);
-  };
   const addUser = () => {
     const user = {
       id: userList.length === 0 ? 1 : userList[userList.length - 1].id + 1,
@@ -36,6 +34,13 @@ const CreateUser = () => {
     setEmail("");
     setPassword("");
   };
+
+  const options = [
+    { value: 4, label: "Integrator" },
+    { value: 3, label: "Admin" },
+    { value: 2, label: "User" },
+    { value: 1, label: "Viewer" },
+  ];
 
   return (
     <>
@@ -72,6 +77,11 @@ const CreateUser = () => {
             <option value={3}>User</option>
             <option value={1}>Viewer</option>
           </select>
+
+          <p style={{ display: "block", marginTop: "1rem" }}>
+            React Select Vesion..
+          </p>
+          <Select options={options} placeholder="Permission level.." />
         </div>
         <button onClick={addUser}>Add A User</button>
       </form>
