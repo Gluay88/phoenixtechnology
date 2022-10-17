@@ -85,7 +85,7 @@
 }
 .form-create-site button,
 .form-create-user button {
-  width: 25%;
+  width: 10rem;
   margin: 0.5rem 0;
   background-color: #74c0fc;
   border: none;
@@ -101,4 +101,67 @@
 }
 .css-1s2u09g-control {
   text-align: left;
+}
+
+.delete-site-btn:hover {
+  background: none !important;
+}
+.delete-site-popup {
+  background-color: rgb(255, 255, 255, 0.85);
+}
+.modal {
+  padding: none !important;
+}
+.modal-content {
+  background-color: #162e50 !important;
+  color: white !important;
+  text-align: center !important;
+  width: 85% !important;
+  margin: 0 auto;
+}
+.modal-header,
+.modal-title {
+  width: 100%;
+  border: none !important;
+}
+button.btn-close {
+  background-color: white !important;
+  width: 0.65rem !important;
+  height: 0.65rem !important;
+}
+.modal-body {
+  padding: 0 !important;
+  margin-top: -1rem !important;
+}
+.modal-body input {
+  width: 80%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  margin-top: -1rem;
+}
+
+.modal-body p:last-child {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #cd3700;
+  padding-top: 0.5rem;
+}
+.modal-footer {
+  border: none !important;
+  margin-bottom: 0.5rem;
+}
+.modal-footer button {
+  background-color: #cd3700;
+  border: none;
+  display: block !important;
+  margin: 0 auto;
+  width: 12rem;
+  border-radius: 1.563rem;
+  margin-top: -1rem;
+  font-weight: 600;
+}
+.modal-footer button:hover {
+  background-color: white !important;
+  color: #cd3700 !important;
 }
