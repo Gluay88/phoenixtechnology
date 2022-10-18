@@ -18,9 +18,6 @@ const Site = ({ siteName, id, deleteSite }) => {
           <button>
             <img src={EditIcon} alt="edit-icon" />
           </button>
-          {/* <button onClick={() => deleteSite(id)}>
-            <img src={DeleteIcon} alt="delete-icon" width="14px" />
-          </button> */}
 
           <Button onClick={handleShow} className="delete-site-btn">
             <img src={DeleteIcon} alt="delete-icon" width="14px" />

@@ -48,8 +48,15 @@ const PhoenixConfig = ({ updateView }) => {
             placeholder="Enter a site name.."
             onChange={handleChange}
             value={newSite}
+            required
           />
-          <button onClick={addSite}>Add A Site</button>
+          {newSite ? (
+            <button onClick={addSite}>Add A Site</button>
+          ) : (
+            <button className="disable-btn" title="Please enter a site name">
+              Add A Site
+            </button>
+          )}
         </form>
         <div>
           {siteList.map((site) => {

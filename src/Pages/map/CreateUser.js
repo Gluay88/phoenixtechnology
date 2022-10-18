@@ -68,22 +68,15 @@ const CreateUser = () => {
           value={password}
         />
         <div className="select-section">
-          <select defaultValue={"DEFAULT"}>
-            <option value="DEFAULT" disabled>
-              Permission level..
-            </option>
-            <option value={4}>Integrator</option>
-            <option value={3}>Admin</option>
-            <option value={3}>User</option>
-            <option value={1}>Viewer</option>
-          </select>
-
-          <p style={{ display: "block", marginTop: "1rem" }}>
-            React Select Vesion..
-          </p>
           <Select options={options} placeholder="Permission level.." />
         </div>
-        <button onClick={addUser}>Add A User</button>
+        {newUser && email && password ? (
+          <button onClick={addUser}>Add A User</button>
+        ) : (
+          <button className="disable-btn" title="Please fill out the form">
+            Add A User
+          </button>
+        )}
       </form>
       <div>
         {userList.map((user, index) => {

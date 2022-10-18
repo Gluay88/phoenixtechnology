@@ -99,6 +99,7 @@
   color: #6c757d;
   padding-left: 0.25rem;
 }
+
 .css-1s2u09g-control {
   text-align: left;
 }
@@ -164,4 +165,13 @@ button.btn-close {
 .modal-footer button:hover {
   background-color: white !important;
   color: #cd3700 !important;
+}
+button.disable-btn {
+  background-color: rgb(80, 80, 80);
+  color: #6b6b6b;
+}
+button.disable-btn:hover {
+  background-color: rgb(80, 80, 80);
+  color: #6b6b6b;
+  cursor: help;
 }

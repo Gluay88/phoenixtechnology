@@ -30,7 +30,7 @@ const MapBase = ({ updateView }) => {
             mapboxAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
             position="top-right"
             className="mapboxgl-ctrl-top-right"
-            placeholder="search here..."
+            placeholder="Search location..."
           />
         </Map>
       </div>
