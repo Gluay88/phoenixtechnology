@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import NavMain from "./NavMain";
 import "./NavBar.css";
 
 const NavBar = () => {
@@ -12,6 +13,7 @@ const NavBar = () => {
           <span>Login</span>
         </Link>
       </div>
+      <NavMain />
     </>
   );
 };

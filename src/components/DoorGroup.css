@@ -1,0 +1,48 @@
+.door-group-container {
+  width: 12.511rem;
+  height: auto;
+}
+.door-group-btn button {
+  width: 12.511rem;
+  height: 2.53rem;
+  font-size: 0.938rem;
+  border: none;
+  border-radius: 1.563rem !important;
+  font-weight: 550;
+}
+.door-group-btn button span {
+  font-size: 1rem;
+}
+
+.door-group-btn button:hover {
+  background-color: #187bcd;
+  color: white;
+}
+.door-group-status-btn {
+  width: 12.511rem;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+}
+
+.door-group-status-btn button {
+  width: 4rem;
+  height: 1.75rem;
+  font-size: 0.7rem !important;
+  border: none;
+  border-radius: 1.563rem;
+  text-align: center !important;
+}
+.door-group-status-btn button:first-child {
+  color: #cd3700;
+  border: solid 0.219rem #cd3700;
+}
+.door-group-status-btn button:nth-child(2) {
+  color: #03a89e;
+  border: solid 0.219rem #03a89e;
+}
+.door-group-status-btn button:last-child {
+  color: #187bcd;
+  border: solid 0.219rem #187bcd;
+}

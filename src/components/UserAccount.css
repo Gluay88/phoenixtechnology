@@ -1,0 +1,43 @@
+#offcanvasRight {
+  z-index: 3000;
+  width: 18.125rem !important;
+  text-align: left;
+}
+
+#offcanvasRight .closeBtn {
+  width: 1rem !important;
+  background-color: #d9d9d9 !important;
+  border: none !important;
+}
+
+#offcanvasRight .closeBtn:hover {
+  background-color: none !important;
+}
+
+.allRightItems button {
+  background-color: none;
+}
+
+#offcanvasRight .offcanvas-body {
+  background-color: #d9d9d9;
+  color: #162e50;
+  border-top: #cccccc solid 0.063rem;
+}
+.offcanvas-body h2 {
+  font-size: 1.25rem;
+}
+.offcanvas-body p {
+  font-size: 0.938rem;
+}
+.offcanvas-body img {
+  margin-left: 0.5rem;
+}
+.offcanvas-body button {
+  background: none !important;
+  border: none;
+  font-size: 1rem;
+  text-align: right;
+}
+.offcanvas-body button:hover {
+  color: #b1b1b1;
+}

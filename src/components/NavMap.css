@@ -1,0 +1,40 @@
+.dropdown-map-menu {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0.5rem 0 2rem 0;
+}
+.dropdown-toggle {
+  background-color: #187bcd !important;
+  border-color: none !important;
+  border: none !important;
+  margin-right: 0.5rem;
+  width: 7.205rem;
+  height: 1.875rem;
+  font-size: 0.75rem !important;
+  border-radius: 0.313rem !important;
+}
+.dropdown-toggle:hover {
+  background-color: white !important;
+  border-color: none !important;
+  color: #162e50 !important;
+}
+
+.dropdown-toggle::active {
+  border: none !important;
+  border-color: none !important;
+}
+
+.dropdown-toggle::after {
+  content: none !important;
+}
+
+.sub-dropdown-menu {
+  background-color: white !important;
+  font-size: 0.75rem !important;
+}
+
+.sub-dropdown-menu a:hover {
+  background-color: #a1fbfe;
+  color: #162e50;
+}

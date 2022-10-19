@@ -1,0 +1,42 @@
+.nav-map-container {
+  width: 39rem;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.nav-map {
+  width: 26.25rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.emergency-button {
+  width: 12.5rem;
+  height: 2.433rem;
+  background-color: #cd3700;
+  color: white;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 1.563rem;
+  border: solid 0.063rem white;
+  margin-right: 1rem;
+}
+
+.emergency-button:hover {
+  background-color: #ff6103;
+}
+
+.system-normal-button {
+  width: 12.5rem;
+  height: 2.433rem;
+  background-color: #03a89e;
+  color: white;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 1.563rem;
+  border: solid 0.063rem white;
+}
+
+.system-normal-button:hover {
+  background-color: #187bcd;
+}

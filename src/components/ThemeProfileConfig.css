@@ -1,0 +1,35 @@
+.allRightItems {
+  width: 11.5rem;
+  height: auto;
+  margin-left: 1rem;
+}
+.allRightItems button {
+  width: 100% !important;
+  height: 2.25rem;
+  font-size: 0.781rem;
+  border: none;
+  text-align: center;
+  background-color: #f6cba3;
+  border-radius: 1.563rem;
+  line-height: 0.8rem;
+  font-weight: 650;
+  border: solid white 0.15rem;
+  color: #162e50;
+  margin-top: 1rem;
+}
+.allRightItems button:hover,
+.bottom-container a:hover {
+  background-color: white;
+  color: #162e50;
+}
+.bottom-container a {
+  text-decoration: none;
+  color: #162e50;
+  font-weight: 650;
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}

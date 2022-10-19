@@ -1,0 +1,16 @@
+.navMainContainer {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #162e50;
+}
+
+.navMain {
+  width: 96%;
+  height: 9.375rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #162e50;
+}

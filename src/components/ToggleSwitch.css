@@ -1,0 +1,40 @@
+/* toggle modes */
+.toggle-mode-container {
+  /* width: 8.188rem; */
+  width: 100%;
+  height: auto;
+}
+.switch {
+  margin: 0 auto;
+  color: #8a8f96;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.switch label {
+  color: #8a8f96;
+  font-size: 0.75rem !important;
+  /* margin-right: 0.5rem; */
+  display: block;
+  width: 4rem;
+}
+
+.react-switch-bg {
+  border: #8a8f96 0.125rem solid !important;
+  background: none !important;
+}
+
+.react-switch-handle {
+  background: none !important;
+  border: #8a8f96 0.125rem solid !important;
+}
+
+#dark {
+  background-color: red;
+  color: white;
+}
+
+#light {
+  background-color: yellow;
+  color: red;
+}
