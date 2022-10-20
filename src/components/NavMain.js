@@ -6,7 +6,7 @@ import ActionNav from "./ActionNav";
 import DoorGroup from "./DoorGroup";
 import ThemeProfileConfig from "./ThemeProfileConfig";
 
-const NavMain = () => {
+const NavMain = ({ updateView }) => {
   return (
     <>
       <div className="navMainContainer">
@@ -15,7 +15,7 @@ const NavMain = () => {
           <PhoenixLogo />
           <ActionNav />
           <DoorGroup />
-          <ThemeProfileConfig />
+          <ThemeProfileConfig updateView={updateView} />
         </div>
       </div>
     </>

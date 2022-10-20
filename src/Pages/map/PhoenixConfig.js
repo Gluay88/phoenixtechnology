@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import NavMain from "../../components/NavMain";
 import Site from "./Site";
 import "./PhoenixConfigStyle.css";
 import CreateUser from "./CreateUser";
@@ -35,6 +36,7 @@ const PhoenixConfig = ({ updateView }) => {
   };
   return (
     <div>
+      <NavMain updateView={updateView} />
       <div className="phoenix-config-container">
         <h2>Phoenix - Site Configuration</h2>
         <button onClick={() => updateView("mapbase")}>Back to mapbase</button>

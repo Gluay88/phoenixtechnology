@@ -172,6 +172,7 @@ const LoginForm = ({ updateView }) => {
             </a>
           </div>
         </div>
+        <a href="/">Back to home page</a>
       </form>
     </div>
   );

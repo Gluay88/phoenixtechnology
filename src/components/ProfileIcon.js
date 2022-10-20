@@ -4,7 +4,7 @@ import ProfilePhoto from "../assets/profileIcon.png";
 const ProfileIcon = () => {
   return (
     <div>
-      <img src={ProfilePhoto} alt="Profile Photo" width="20px" />
+      <img src={ProfilePhoto} alt="Profile Photo" width="30px" />
     </div>
   );
 };

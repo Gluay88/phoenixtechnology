@@ -3,7 +3,7 @@ import ToggleSwitch from "./ToggleSwitch";
 import "./ThemeProfileConfig.css";
 import UserAccount from "./UserAccount";
 
-const ThemeProfileConfig = () => {
+const ThemeProfileConfig = ({ updateView }) => {
   return (
     <div className="allRightItems">
       <div className="top-container">
@@ -12,7 +12,7 @@ const ThemeProfileConfig = () => {
       </div>
       <div className="bottom-container">
         <button>
-          <a href="/map">EAGL CONFIGURATION</a>
+          <a onClick={() => updateView("configuration")}>EAGL CONFIGURATION</a>
         </button>
       </div>
     </div>

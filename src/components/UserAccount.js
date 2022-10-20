@@ -23,6 +23,7 @@ const UserAccount = () => {
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasRight"
         aria-controls="offcanvasRight"
+        id="profile-pic"
       >
         <ProfileIcon />
       </button>
@@ -48,12 +49,12 @@ const UserAccount = () => {
         <div className="offcanvas-body">
           {/* hard coded */}
           <h2>{userNameId}</h2>
-          <p>gluays@eagltechnology.com</p>
+          <p>gluay@phoenixtechnology.com</p>
 
           <p>
             Personal settings
             <a href="#">
-              <img src={SettingIcon} alt="setting-icon" />
+              <img src={SettingIcon} alt="setting-icon" width="20px" />
             </a>
           </p>
           <button onClick={removeToken}>Logout</button>

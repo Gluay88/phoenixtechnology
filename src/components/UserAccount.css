@@ -41,3 +41,7 @@
 .offcanvas-body button:hover {
   color: #b1b1b1;
 }
+button#profile-pic {
+  background: none;
+  border: none;
+}
